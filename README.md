@@ -17,6 +17,7 @@ The website is built using HTML5, CSS3, and JavaScript, and is hosted via GitHub
 - Project showcase with links to the GitHub repositories.
 - Interactive elements like hover effects on project images.
 - Contact information with mailto and tel links for easy communication.
+- Use toggleButton to adjust different devices.
 
 ## How to Use
 

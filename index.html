@@ -15,22 +15,20 @@
             <p>Software Developer | Information Systems Student</p>
             <p>Location: Boston, MA</p>
             <a href="mailto:luomengge2023@outlook.com" class="contact-link">luomengge2023@outlook.com</a>
-        </div>
-    </header>
-    
-    <button class="menu-toggle">☰</button>
-<nav class="side-nav">
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
- 
+            </div>
+            </header>
+            
+            <button class="menu-toggle">☰</button>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
     <section id="about">
         <h2>About Me</h2>
         <p>I am currently pursuing my Master’s in Information Systems at Northeastern University. I have a strong passion
@@ -126,5 +124,18 @@
         <a href="https://github.com/yourusername">GitHub</a> | 
         <a href="mailto:luomengge2023@outlook.com">Contact Me</a>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+         
+            const toggleButton = document.querySelector('.menu-toggle');
+            const sideNav = document.querySelector('.side-nav');
+            const mainContent = document.querySelector('body');
+
+            toggleButton.addEventListener('click', function() {
+                sideNav.classList.toggle('open'); 
+                mainContent.classList.toggle('shifted');
+            });
+        });
+    </script>
 </body>
 </html>
