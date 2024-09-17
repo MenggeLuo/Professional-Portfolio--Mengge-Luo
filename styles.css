@@ -16,8 +16,21 @@ header {
 
 header h1 {
     margin: 10px 0;
+    color: #fafafa;
+}
+header h1, header p {
+    color: white; 
+}
+p {
+    color: #333;
+}
+figcaption {
+    color: #333;
 }
 
+h2 {
+    color: #ffa500;
+}
 .side-nav {
     height: 100%;
     width: 200px;
@@ -48,6 +61,7 @@ header h1 {
 .side-nav ul li a:hover {
     background-color: #575757;
     transition: background-color 0.3s ease;
+    color: #ffa500; 
 }
 
 
@@ -79,7 +93,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #575757;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -90,15 +104,18 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    color: #333;
 }
 
 
 .experience-item, .education-item {
     margin-bottom: 20px;
+    color: #333;
 }
 
 .experience-item h3, .education-item h3 {
     margin-bottom: 5px;
+    color: #333;
 }
 
 .gallery {
@@ -108,9 +125,11 @@ ul li {
     justify-content: center;
 }
 
+
 .gallery figure {
     flex-basis: 50%; 
-    background-color: #f9f9f9;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -134,15 +153,25 @@ ul li {
 .gallery img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+    border: 2px solid #ffa500; 
 }
 
 
 footer {
     text-align: center;
     background-color: #333;
-    color: white;
+    color: white  !important;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+footer p {
+    color: white !important; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffa500  !important; 
 }
 
 @media (max-width: 768px) {
