@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -18,12 +17,15 @@ header h1 {
     margin: 10px 0;
     color: #fafafa;
 }
+
 header h1, header p {
-    color: white; 
+    color: white;
 }
+
 p {
     color: #333;
 }
+
 figcaption {
     color: #333;
 }
@@ -31,6 +33,7 @@ figcaption {
 h2 {
     color: #ffa500;
 }
+
 .side-nav {
     height: 100%;
     width: 200px;
@@ -40,6 +43,7 @@ h2 {
     background-color: #333;
     padding-top: 20px;
     z-index: 1000;
+    transition: width 0.3s ease;
 }
 
 .side-nav ul {
@@ -61,14 +65,14 @@ h2 {
 .side-nav ul li a:hover {
     background-color: #575757;
     transition: background-color 0.3s ease;
-    color: #ffa500; 
+    color: #ffa500;
 }
-
 
 body {
-    margin-left: 200px; 
+    margin-left: 200px;
     padding: 20px;
 }
+
 .profile-pic {
     border-radius: 50%;
     width: 150px;
@@ -107,7 +111,6 @@ ul li {
     color: #333;
 }
 
-
 .experience-item, .education-item {
     margin-bottom: 20px;
     color: #333;
@@ -125,9 +128,8 @@ ul li {
     justify-content: center;
 }
 
-
 .gallery figure {
-    flex-basis: 50%; 
+    flex-basis: 50%;
     background-color: #fafafa;
     border: 1px solid #ddd;
     padding: 10px;
@@ -138,8 +140,8 @@ ul li {
 .gallery img {
     display: block;
     margin: 0 auto;
-    width: 100%; 
-    height: 220px; 
+    width: 100%;
+    height: 220px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -149,29 +151,27 @@ ul li {
     font-style: italic;
 }
 
-
 .gallery img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-    border: 2px solid #ffa500; 
+    border: 2px solid #ffa500;
 }
-
 
 footer {
     text-align: center;
     background-color: #333;
-    color: white  !important;
+    color: white !important;
     padding: 10px 0;
     margin-top: 20px;
 }
 
 footer p {
-    color: white !important; 
+    color: white !important;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #ffa500  !important; 
+    color: #ffa500 !important;
 }
 
 @media (max-width: 768px) {
@@ -181,6 +181,52 @@ footer a:hover {
 
     .profile-pic {
         width: 120px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .top-nav ul {
+        flex-direction: column;
+    }
+
+    .gallery figure {
+        flex-basis: 100%;
+    }
+
+    .side-nav {
+        width: 0;
+        overflow-x: hidden;
+    }
+
+    .side-nav.open {
+        width: 250px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .main-content.shifted {
+        margin-left: 250px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+    }
+
+    body {
+        margin-left: 0;
     }
 }
 
@@ -195,40 +241,5 @@ footer a:hover {
 
     section {
         padding: 10px;
-    }
-}
-@media (max-width: 768px) {
-    .top-nav ul {
-        flex-direction: column;
-    }
-
-    .side-nav {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    body {
-        margin-left: 0;
-    }
-}
-@media (max-width: 768px) {
-    .gallery figure {
-        flex-basis: 100%; 
-    }
-}
-
-@media (max-width: 768px) {
-    .side-nav {
-        width: 100%; 
-        height: auto; 
-        position: fixed; 
-        left: 0; 
-        top: 0; 
-    }
-
-
-    body {
-        margin-left: 0; 
     }
 }
