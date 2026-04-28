@@ -3,137 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Profile</title>
+    <title>Mengge Luo | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-    <header>
-        <div class="profile-header">
-            <img src="girl3.png" alt="Profile Picture" class="profile-pic">
-            <h1>Mengge Luo</h1>
-            <p>Software Developer | Information Systems Student</p>
-            <p>Location: Boston, MA</p>
-            <a href="mailto:luomengge2023@outlook.com" class="contact-link">luomengge2023@outlook.com</a>
+    <div class="page-shell">
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+
+        <nav class="side-nav">
+            <div class="nav-brand">
+                <span>ML</span>
             </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="hero">
+                <div class="hero-glow"></div>
+                <div class="profile-card">
+                    <img src="girl3.png" alt="Profile Picture" class="profile-pic">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Hi there, I'm</p>
+                        <h1>Mengge Luo</h1>
+                        <p class="hero-title">Software Developer &amp; AI Engineer</p>
+                        <p class="hero-subtitle">
+I build AI-driven Apps with clean architecture, practical design, and seamless user experience.
+</p>
+
+                        <div class="hero-links">
+                            <a href="mailto:luomengge2023@outlook.com" class="button primary">Say Hello</a>
+                            <a href="#projects" class="button secondary">See My Work</a>
+                        </div>
+                    </div>
+                </div>
             </header>
-            
-            <button class="menu-toggle">☰</button>
-            <nav class="side-nav">
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am currently pursuing my Master’s in Information Systems at Northeastern University. I have a strong passion
-            for software development, particularly in Java, Python, and web development technologies like React. My work
-            experience spans various industries where I have successfully contributed to optimizing systems and building
-            innovative solutions.</p>
-    </section>
-    
-  
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="gallery">
-            <figure>
-                <a href="https://github.com/xu-qianyi/No404_Final.git">
-                <img src="project1.png" alt="Project 1">
-                </a>
-                <figcaption>Project 1: Airline Sales System</figcaption>
-            </figure>
-            <figure>
-                <a href="https://github.com/MenggeLuo/twitter-clone.git">
-                    <img src="project2.png" alt="Project 2">
-                </a> 
-                <figcaption>Project 2: Microblog Platform</figcaption>
-            </figure>
-            <figure>
-                <a href="https://github.com/CSYE6200-OOD-Spring2024/final-MenggeLuo.git">
-                <img src="project3.png" alt="Project 3">
-                </a>
-                <figcaption>Project 3: Student Management System</figcaption>
-            </figure>
-        </div>
-    </section>
 
-  
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience-item">
-            <h3>Software Development Intern - IntelliPro Group</h3>
-            <p>July 2024 - Present</p>
-            <ul>
-                <li>Optimized website frontend using React, reducing load times by 2.5 seconds.</li>
-                <li>Developed live streaming modules using Java and PHP, enhancing system functionality.</li>
-                <li>Improved CRM system efficiency, reducing administrative tasks by 10%.</li>
-            </ul>
-        </div>
-        <div class="experience-item">
-            <h3>Software Engineer - Zhongke Digital Shield</h3>
-            <p>Aug. 2022 - May. 2023</p>
-            <ul>
-                <li>Developed a control platform for an intelligent prison data center using Java.</li>
-                <li>Optimized mobile app on Android OS, improving data processing efficiency by 15%.</li>
-            </ul>
-        </div>
-    </section>
+            <section id="about" class="section">
+                <div class="section-intro">
+                    <p class="section-overline">About Me</p>
+                    <h2>Building practical AI products with clarity and purpose.</h2>
+                </div>
+                <p>I am a Software Engineer specializing in AI application development, with experience in LLM-based systems, document understanding, and data processing pipelines. I work with Python, Java, and modern web frameworks to design and implement end-to-end solutions.
 
+I focus on applying large language models to real-world problems, such as document parsing, semantic search, and structured output generation. My goal is to bridge engineering and AI to deliver scalable, production-ready systems.</p>
+            </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Northeastern University</h3>
-            <p>Master of Science in Information Systems</p>
-            <p>Sept. 2023 - Dec. 2025 (Expected)</p>
-        </div>
-        <div class="education-item">
-            <h3>University of International Relations</h3>
-            <p>Bachelor of Engineering in Information Systems</p>
-            <p>Sept. 2017 - Jun. 2021</p>
-        </div>
-    </section>
+            <section id="experience" class="section">
+                <div class="section-intro">
+                    <p class="section-overline">Experience</p>
+                    
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <h3>AI开发工程师</h3>
+                        <p class="meta">全芯智造技术股份有限公司 · 上海 · 2026.4 - 至今</p>
+                        <ul>
+                            <li>设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。</li>
+                            <li>基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性与维护效率。</li>
+                            <li>基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块，为向量化检索与 LLM 问答系统提供高质输入数据。</li>
+                            <li>设计统一的数据输出结构，整合正文、表格与元数据信息，为下游 LLM 问答与 Agent workflow 提供标准化输入。</li>
+                            <li>结合多阶段处理流程（解析 → 清洗 → 分块 → 组织），提升知识库数据质量，降低模型幻觉风险并提高检索相关性。</li>
+                            <li>编写完善的单元测试体系，覆盖参数化测试与异常场景，保障各类解析器在多文件格式下的稳定性与鲁棒性。</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>AI开发工程师</h3>
+                        <p class="meta">上海理想信息产业（集团）有限公司 · 上海 · 2026.2 - 2026.3</p>
+                        <ul>
+                            <li>设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。</li>
+                            <li>基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性与维护效率。</li>
+                            <li>基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块，为向量化检索与 LLM 问答系统提供高质输入数据。</li>
+                            <li>设计统一的数据输出结构，整合正文、表格与元数据信息，为下游 LLM 问答与 Agent workflow 提供标准化输入。</li>
+                            <li>结合多阶段处理流程（解析 → 清洗 → 分块 → 组织），提升知识库数据质量，降低模型幻觉风险并提高检索相关性。</li>
+                            <li>编写完善的单元测试体系，覆盖参数化测试与异常场景，保障各类解析器在多文件格式下的稳定性与鲁棒性。</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>软件开发实习生</h3>
+                        <p class="meta">IntelliPro Group · 美国圣克拉拉 · 2025.2 - 2025.6</p>
+                        <ul>
+                            <li>开发 Python 自动化舆情采集系统，设计请求调度与异常重试机制，实现数据定时抓取，为业务分析与 AI 应用提供数据支持。</li>
+                            <li>构建非结构化文本数据处理流程，对采集内容进行结构化整理与语义分析，为后续 NLP/LLM 应用提供输入数据。</li>
+                            <li>使用 React/Next.js 开发集团中文官网，通过服务端渲染与动态加载优化首屏性能，并完成与 CMS 后端 API 的数据对接。</li>
+                            <li>参与小鹏汽车校招宣传页前端开发，采用 CSS Grid 与 Flexbox 实现响应式布局，并通过组件拆分与状态优化提升渲染效率，支持校招高峰期的稳定访问。</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>软件开发工程师</h3>
+                        <p class="meta">中科数盾科技有限公司 · 安徽合肥 · 2021.10 - 2023.5</p>
+                        <ul>
+                            <li>参与语音数据预处理平台开发，使用 Python 及 PyAudio、LibROSA 实现音频切分、特征提取与样本过滤，提升语料预处理效率。</li>
+                            <li>协助优化普通话与方言语料的清洗与标注流程，制定标注质检规则，为语音识别模型训练提供高质量数据支持。</li>
+                            <li>参与实时语音转写 Demo 系统开发，协助封装语音识别接口并与前端联调，实现低延迟的语音输入与文本输出演示。</li>
+                            <li>使用 Java 与 Spring Boot 参与智慧数据管控平台开发，实现人员轨迹与考核管理相关后端功能，设计并实现多个 RESTful API。</li>
+                            <li>参与 MySQL 数据库性能优化，通过建立复合索引与改写查询逻辑，将核心多表关联查询响应时间从平均 15 秒优化至 2 秒内。</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
 
+            <section id="projects" class="section">
+                <div class="section-intro">
+                    <p class="section-overline">Projects</p>
+                    
+                </div>
+                <div class="project-grid">
+                    <figure class="project-card">
+                        <a href="#">
+                            <img src="project1.png" alt="IntelliPro Group Chinese website">
+                        </a>
+                        <figcaption>IPG Chinese Official Website</figcaption>
+                    </figure>
+                    <figure class="project-card">
+                        <a href="https://github.com/yfeng445/Nvidia-Stock-Price-Analysis.git">
+                            <img src="project2.png" alt="Stock Price Analysis and Prediction">
+                        </a>
+                        <figcaption>Stock Price Analysis &amp; Prediction</figcaption>
+                    </figure>
+                    <figure class="project-card">
+                        <a href="#">
+                            <img src="project3.png" alt="AI Document Parsing">
+                        </a>
+                        <figcaption>AI Document Parsing</figcaption>
+                    </figure>
+                    <figure class="project-card">
+                        <a href="https://github.com/MenggeLuo/twitter-clone.git">
+                            <img src="project4.png" alt="Microblog Platform">
+                        </a>
+                        <figcaption>Microblog Platform</figcaption>
+                    </figure>
+                </div>
+            </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>React</li>
-            <li>HTML/CSS</li>
-            <li>SQL</li>
-        </ul>
-    </section>
+            <section id="education" class="section">
+                <div class="section-intro">
+                    <p class="section-overline">Education</p>
+                    <h2>Growing through thoughtful coursework and applied learning</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Northeastern University</h3>
+                        <p>Master of Science in Information Systems</p>
+                        <p>Sept 2023 - Dec 2025</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>University of International Relations</h3>
+                        <p>Bachelor of Engineering in Information Systems</p>
+                        <p>Sept 2017 - Jun 2021</p>
+                    </div>
+                </div>
+            </section>
 
+            <section id="skills" class="section">
+                <div class="section-intro">
+                    <p class="section-overline">Skills</p>
+                    <h2>Tools and languages I enjoy working with</h2>
+                </div>
+                <div class="skills-bullets">
+                    <div>
+                        <p><strong>编程语言</strong></p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript（ES6+）</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>全栈开发</strong></p>
+                        <ul>
+                            <li>Spring Boot</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>HTML5/CSS</li>
+                            <li>RESTful API</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>开发工具与工程实践</strong></p>
+                        <ul>
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>Linux</li>
+                            <li>Postman</li>
+                            <li>单元测试</li>
+                            <li>模块化设计</li>
+                            <li>性能调优</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:luomengge2023@outlook.com">luomengge2023@outlook.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mengge-luo">linkedin.com/in/mengge-luo</a></p>
-        <p>Phone: <a href="tel:7819216945">781-921-6945</a></p>
-    </section>
+            <section id="contact" class="section contact-section">
+                <div class="section-intro">
+                    <p class="section-overline">Contact</p>
+                    <h2>Let’s build something together</h2>
+                </div>
+                <div class="contact-grid">
+                    <div>
+                        <p><strong>Email</strong></p>
+                        <a href="mailto:luomengge2023@outlook.com">luomengge2023@outlook.com</a>
+                    </div>
+                    <div>
+                        <p><strong>LinkedIn</strong></p>
+                        <a href="https://www.linkedin.com/in/mengge-luo" target="_blank" rel="noreferrer">linkedin.com/in/mengge-luo</a>
+                    </div>
+                    <div>
+                        <p><strong>Phone</strong></p>
+                        <a href="tel:7819216945">781-921-6945</a>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>© 2024 Mengge Luo. All rights reserved.</p>
-        <a href="https://github.com/yourusername">GitHub</a> | 
-        <a href="mailto:luomengge2023@outlook.com">Contact Me</a>
-    </footer>
+            <footer>
+                <p>© 2026 Mengge Luo. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/MenggeLuo" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="mailto:luomengge2023@outlook.com">Contact Me</a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-         
             const toggleButton = document.querySelector('.menu-toggle');
-            const sideNav = document.querySelector('.side-nav');
-            const mainContent = document.querySelector('body');
+            const body = document.body;
+            const navLinks = document.querySelectorAll('.side-nav a');
 
             toggleButton.addEventListener('click', function() {
-                sideNav.classList.toggle('open'); 
-                mainContent.classList.toggle('shifted');
+                body.classList.toggle('nav-open');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (body.classList.contains('nav-open')) {
+                        body.classList.remove('nav-open');
+                    }
+                });
             });
         });
     </script>
