@@ -12,18 +12,19 @@
 <body>
     <div class="page-shell">
         <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <button class="lang-toggle" aria-label="Toggle language">中文</button>
 
         <nav class="side-nav">
             <div class="nav-brand">
                 <span>ML</span>
             </div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -33,16 +34,14 @@
                 <div class="profile-card">
                     <img src="girl3.png" alt="Profile Picture" class="profile-pic">
                     <div class="hero-copy">
-                        <p class="eyebrow">Hi there, I'm</p>
+                        <p class="eyebrow" data-i18n="hero.greeting">Hi there, I'm</p>
                         <h1>Mengge Luo</h1>
-                        <p class="hero-title">Software Developer &amp; AI Engineer</p>
-                        <p class="hero-subtitle">
-I build AI-driven Apps with clean architecture, practical design, and seamless user experience.
-</p>
+                        <p class="hero-title" data-i18n="hero.title">Software Developer & AI Engineer</p>
+                        <p class="hero-subtitle" data-i18n="hero.subtitle">I build AI-driven Apps with clean architecture, practical design, and seamless user experience.</p>
 
                         <div class="hero-links">
-                            <a href="mailto:luomengge2023@outlook.com" class="button primary">Say Hello</a>
-                            <a href="#projects" class="button secondary">See My Work</a>
+                            <a href="mailto:luomengge2023@outlook.com" class="button primary" data-i18n="hero.hello">Say Hello</a>
+                            <a href="#projects" class="button secondary" data-i18n="hero.work">See My Work</a>
                         </div>
                     </div>
                 </div>
@@ -50,63 +49,63 @@ I build AI-driven Apps with clean architecture, practical design, and seamless u
 
             <section id="about" class="section">
                 <div class="section-intro">
-                    <p class="section-overline">About Me</p>
-                    <h2>Building practical AI products with clarity and purpose.</h2>
+                    <p class="section-overline" data-i18n="about.label">About Me</p>
+                    <h2 data-i18n="about.title">Building practical AI products with clarity and purpose.</h2>
                 </div>
-                <p>I am a Software Engineer specializing in AI application development, with experience in LLM-based systems, document understanding, and data processing pipelines. I work with Python, Java, and modern web frameworks to design and implement end-to-end solutions.
+                <p data-i18n="about.text">I am a Software Engineer specializing in AI application development, with experience in LLM-based systems, document understanding, and data processing pipelines. I work with Python, Java, and modern web frameworks to design and implement end-to-end solutions.
 
 I focus on applying large language models to real-world problems, such as document parsing, semantic search, and structured output generation. My goal is to bridge engineering and AI to deliver scalable, production-ready systems.</p>
             </section>
 
             <section id="experience" class="section">
                 <div class="section-intro">
-                    <p class="section-overline">Experience</p>
-                    
+                    <p class="section-overline" data-i18n="exp.label">Experience</p>
+                    <h2 data-i18n="exp.title">Real-world software delivery and system optimization</h2>
                 </div>
                 <div class="timeline">
                     <article class="timeline-item">
-                        <h3>AI开发工程师</h3>
-                        <p class="meta">全芯智造技术股份有限公司 · 上海 · 2026.4 - 至今</p>
+                        <h3 data-i18n="exp.job1.title">AI Developer Engineer</h3>
+                        <p class="meta" data-i18n="exp.job1.company">Allchip Technologies · Shanghai · 2026.4 - Present</p>
                         <ul>
-                            <li>设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。</li>
-                            <li>基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性与维护效率。</li>
-                            <li>基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块，为向量化检索与 LLM 问答系统提供高质输入数据。</li>
-                            <li>设计统一的数据输出结构，整合正文、表格与元数据信息，为下游 LLM 问答与 Agent workflow 提供标准化输入。</li>
-                            <li>结合多阶段处理流程（解析 → 清洗 → 分块 → 组织），提升知识库数据质量，降低模型幻觉风险并提高检索相关性。</li>
-                            <li>编写完善的单元测试体系，覆盖参数化测试与异常场景，保障各类解析器在多文件格式下的稳定性与鲁棒性。</li>
+                            <li data-i18n="exp.job1.b1">Designed and implemented a scalable multi-format document parsing framework supporting 10+ file types.</li>
+                            <li data-i18n="exp.job1.b2">Implemented Registry Pattern + Factory Pattern for parser auto-registration and dynamic loading.</li>
+                            <li data-i18n="exp.job1.b3">Built RAG-based document preprocessing pipeline with structured extraction and semantic chunking.</li>
+                            <li data-i18n="exp.job1.b4">Designed unified data output structure integrating body text, tables, and metadata.</li>
+                            <li data-i18n="exp.job1.b5">Combined multi-stage processing to improve knowledge base quality and reduce model hallucination risk.</li>
+                            <li data-i18n="exp.job1.b6">Implemented comprehensive unit test suite with parameterized tests and exception scenarios.</li>
                         </ul>
                     </article>
                     <article class="timeline-item">
-                        <h3>AI开发工程师</h3>
-                        <p class="meta">上海理想信息产业（集团）有限公司 · 上海 · 2026.2 - 2026.3</p>
+                        <h3 data-i18n="exp.job2.title">AI Developer Engineer</h3>
+                        <p class="meta" data-i18n="exp.job2.company">Shanghai Ideals Information Industry · Shanghai · 2026.2 - 2026.3</p>
                         <ul>
-                            <li>设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。</li>
-                            <li>基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性与维护效率。</li>
-                            <li>基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块，为向量化检索与 LLM 问答系统提供高质输入数据。</li>
-                            <li>设计统一的数据输出结构，整合正文、表格与元数据信息，为下游 LLM 问答与 Agent workflow 提供标准化输入。</li>
-                            <li>结合多阶段处理流程（解析 → 清洗 → 分块 → 组织），提升知识库数据质量，降低模型幻觉风险并提高检索相关性。</li>
-                            <li>编写完善的单元测试体系，覆盖参数化测试与异常场景，保障各类解析器在多文件格式下的稳定性与鲁棒性。</li>
+                            <li data-i18n="exp.job2.b1">Designed and implemented a scalable multi-format document parsing framework supporting 10+ file types.</li>
+                            <li data-i18n="exp.job2.b2">Implemented Registry Pattern + Factory Pattern for parser auto-registration and dynamic loading.</li>
+                            <li data-i18n="exp.job2.b3">Built RAG-based document preprocessing pipeline with structured extraction and semantic chunking.</li>
+                            <li data-i18n="exp.job2.b4">Designed unified data output structure integrating body text, tables, and metadata.</li>
+                            <li data-i18n="exp.job2.b5">Combined multi-stage processing to improve knowledge base quality and reduce model hallucination risk.</li>
+                            <li data-i18n="exp.job2.b6">Implemented comprehensive unit test suite with parameterized tests and exception scenarios.</li>
                         </ul>
                     </article>
                     <article class="timeline-item">
-                        <h3>软件开发实习生</h3>
-                        <p class="meta">IntelliPro Group · 美国圣克拉拉 · 2025.2 - 2025.6</p>
+                        <h3 data-i18n="exp.job3.title">Software Development Intern</h3>
+                        <p class="meta" data-i18n="exp.job3.company">IntelliPro Group · Santa Clara, USA · 2025.2 - 2025.6</p>
                         <ul>
-                            <li>开发 Python 自动化舆情采集系统，设计请求调度与异常重试机制，实现数据定时抓取，为业务分析与 AI 应用提供数据支持。</li>
-                            <li>构建非结构化文本数据处理流程，对采集内容进行结构化整理与语义分析，为后续 NLP/LLM 应用提供输入数据。</li>
-                            <li>使用 React/Next.js 开发集团中文官网，通过服务端渲染与动态加载优化首屏性能，并完成与 CMS 后端 API 的数据对接。</li>
-                            <li>参与小鹏汽车校招宣传页前端开发，采用 CSS Grid 与 Flexbox 实现响应式布局，并通过组件拆分与状态优化提升渲染效率，支持校招高峰期的稳定访问。</li>
+                            <li data-i18n="exp.job3.b1">Developed Python automation system for public opinion data collection with request scheduling.</li>
+                            <li data-i18n="exp.job3.b2">Built unstructured text processing pipeline with structured extraction and semantic analysis.</li>
+                            <li data-i18n="exp.job3.b3">Developed group Chinese official website using React/Next.js with server-side rendering.</li>
+                            <li data-i18n="exp.job3.b4">Participated in Xpeng Motors campus recruitment page frontend development.</li>
                         </ul>
                     </article>
                     <article class="timeline-item">
-                        <h3>软件开发工程师</h3>
-                        <p class="meta">中科数盾科技有限公司 · 安徽合肥 · 2021.10 - 2023.5</p>
+                        <h3 data-i18n="exp.job4.title">Software Engineer</h3>
+                        <p class="meta" data-i18n="exp.job4.company">Zhongke Digital Shield Technology · Hefei · 2021.10 - 2023.5</p>
                         <ul>
-                            <li>参与语音数据预处理平台开发，使用 Python 及 PyAudio、LibROSA 实现音频切分、特征提取与样本过滤，提升语料预处理效率。</li>
-                            <li>协助优化普通话与方言语料的清洗与标注流程，制定标注质检规则，为语音识别模型训练提供高质量数据支持。</li>
-                            <li>参与实时语音转写 Demo 系统开发，协助封装语音识别接口并与前端联调，实现低延迟的语音输入与文本输出演示。</li>
-                            <li>使用 Java 与 Spring Boot 参与智慧数据管控平台开发，实现人员轨迹与考核管理相关后端功能，设计并实现多个 RESTful API。</li>
-                            <li>参与 MySQL 数据库性能优化，通过建立复合索引与改写查询逻辑，将核心多表关联查询响应时间从平均 15 秒优化至 2 秒内。</li>
+                            <li data-i18n="exp.job4.b1">Participated in voice data preprocessing platform development using Python and PyAudio.</li>
+                            <li data-i18n="exp.job4.b2">Optimized Mandarin and dialect corpus cleaning with quality assurance rules.</li>
+                            <li data-i18n="exp.job4.b3">Participated in real-time speech transcription system development.</li>
+                            <li data-i18n="exp.job4.b4">Participated in intelligent data management platform using Java and Spring Boot.</li>
+                            <li data-i18n="exp.job4.b5">Optimized MySQL queries reducing average response time from 15s to 2s.</li>
                         </ul>
                     </article>
                 </div>
@@ -114,73 +113,73 @@ I focus on applying large language models to real-world problems, such as docume
 
             <section id="projects" class="section">
                 <div class="section-intro">
-                    <p class="section-overline">Projects</p>
-                    
+                    <p class="section-overline" data-i18n="proj.label">Projects</p>
+                    <h2 data-i18n="proj.title">Selected work with polished micro-interactions</h2>
                 </div>
                 <div class="project-grid">
                     <figure class="project-card">
-                        <a href="#">
+                        <a href="https://www.intelliprogroup.cn/">
                             <img src="project1.png" alt="IntelliPro Group Chinese website">
                         </a>
-                        <figcaption>IPG Chinese Official Website</figcaption>
+                        <figcaption data-i18n="proj.p1">IPG Chinese Official Website</figcaption>
                     </figure>
                     <figure class="project-card">
                         <a href="https://github.com/yfeng445/Nvidia-Stock-Price-Analysis.git">
                             <img src="project2.png" alt="Stock Price Analysis and Prediction">
                         </a>
-                        <figcaption>Stock Price Analysis &amp; Prediction</figcaption>
+                        <figcaption data-i18n="proj.p2">Stock Price Analysis & Prediction</figcaption>
                     </figure>
                     <figure class="project-card">
-                        <a href="#">
+                        <a href="https://github.com/MenggeLuo/document_parser.git">
                             <img src="project3.png" alt="AI Document Parsing">
                         </a>
-                        <figcaption>AI Document Parsing</figcaption>
+                        <figcaption data-i18n="proj.p3">AI Document Parsing</figcaption>
                     </figure>
                     <figure class="project-card">
                         <a href="https://github.com/MenggeLuo/twitter-clone.git">
                             <img src="project4.png" alt="Microblog Platform">
                         </a>
-                        <figcaption>Microblog Platform</figcaption>
+                        <figcaption data-i18n="proj.p4">Microblog Platform</figcaption>
                     </figure>
                 </div>
             </section>
 
             <section id="education" class="section">
                 <div class="section-intro">
-                    <p class="section-overline">Education</p>
-                    <h2>Growing through thoughtful coursework and applied learning</h2>
+                    <p class="section-overline" data-i18n="edu.label">Education</p>
+                    <h2 data-i18n="edu.title">Growing through thoughtful coursework and applied learning</h2>
                 </div>
                 <div class="info-grid">
                     <div class="info-card">
-                        <h3>Northeastern University</h3>
-                        <p>Master of Science in Information Systems</p>
-                        <p>Sept 2023 - Dec 2025</p>
+                        <h3 data-i18n="edu.uni1.name">Northeastern University</h3>
+                        <p data-i18n="edu.uni1.degree">Master of Science in Information Systems</p>
+                        <p data-i18n="edu.uni1.date">Sept 2023 - Dec 2025</p>
                     </div>
                     <div class="info-card">
-                        <h3>University of International Relations</h3>
-                        <p>Bachelor of Engineering in Information Systems</p>
-                        <p>Sept 2017 - Jun 2021</p>
+                        <h3 data-i18n="edu.uni2.name">University of International Relations</h3>
+                        <p data-i18n="edu.uni2.degree">Bachelor of Engineering in Information Systems</p>
+                        <p data-i18n="edu.uni2.date">Sept 2017 - Jun 2021</p>
                     </div>
                 </div>
             </section>
 
             <section id="skills" class="section">
                 <div class="section-intro">
-                    <p class="section-overline">Skills</p>
-                    <h2>Tools and languages I enjoy working with</h2>
+                    <p class="section-overline" data-i18n="skills.label">Skills</p>
+                    <h2 data-i18n="skills.title">Tools and languages I enjoy working with</h2>
                 </div>
                 <div class="skills-bullets">
                     <div>
-                        <p><strong>编程语言</strong></p>
+                        <p data-i18n="skills.cat1"><strong>Programming Languages</strong></p>
                         <ul>
                             <li>Python</li>
                             <li>Java</li>
-                            <li>JavaScript（ES6+）</li>
+                            <li>JavaScript (ES6+)</li>
                             <li>SQL</li>
                         </ul>
                     </div>
                     <div>
-                        <p><strong>全栈开发</strong></p>
+                        <p data-i18n="skills.cat2"><strong>Full Stack Development</strong></p>
                         <ul>
                             <li>Spring Boot</li>
                             <li>React</li>
@@ -191,15 +190,15 @@ I focus on applying large language models to real-world problems, such as docume
                         </ul>
                     </div>
                     <div>
-                        <p><strong>开发工具与工程实践</strong></p>
+                        <p data-i18n="skills.cat3"><strong>Dev Tools & Engineering</strong></p>
                         <ul>
                             <li>Git</li>
                             <li>Docker</li>
                             <li>Linux</li>
                             <li>Postman</li>
-                            <li>单元测试</li>
-                            <li>模块化设计</li>
-                            <li>性能调优</li>
+                            <li>Unit Testing</li>
+                            <li>Modular Design</li>
+                            <li>Performance Tuning</li>
                         </ul>
                     </div>
                 </div>
@@ -207,37 +206,95 @@ I focus on applying large language models to real-world problems, such as docume
 
             <section id="contact" class="section contact-section">
                 <div class="section-intro">
-                    <p class="section-overline">Contact</p>
-                    <h2>Let’s build something together</h2>
+                    <p class="section-overline" data-i18n="contact.label">Contact</p>
+                    <h2 data-i18n="contact.title">Let's build something together</h2>
                 </div>
                 <div class="contact-grid">
                     <div>
-                        <p><strong>Email</strong></p>
+                        <p><strong data-i18n="contact.email_label">Email</strong></p>
                         <a href="mailto:luomengge2023@outlook.com">luomengge2023@outlook.com</a>
                     </div>
                     <div>
-                        <p><strong>LinkedIn</strong></p>
+                        <p><strong data-i18n="contact.linkedin_label">LinkedIn</strong></p>
                         <a href="https://www.linkedin.com/in/mengge-luo" target="_blank" rel="noreferrer">linkedin.com/in/mengge-luo</a>
                     </div>
                     <div>
-                        <p><strong>Phone</strong></p>
-                        <a href="tel:7819216945">781-921-6945</a>
+                        <p><strong data-i18n="contact.phone_label">Phone</strong></p>
+                        <a href="tel:17611539377">176-1153-9377</a>
                     </div>
                 </div>
             </section>
 
             <footer>
-                <p>© 2026 Mengge Luo. All rights reserved.</p>
+                <p data-i18n="footer">&copy; 2026 Mengge Luo. All rights reserved.</p>
                 <div class="footer-links">
-                    <a href="https://github.com/MenggeLuo" target="_blank" rel="noreferrer">GitHub</a>
-                    <a href="mailto:luomengge2023@outlook.com">Contact Me</a>
+                    <a href="https://github.com/MenggeLuo" target="_blank" rel="noreferrer" data-i18n="footer.github">GitHub</a>
+                    <a href="mailto:luomengge2023@outlook.com" data-i18n="footer.contact">Contact Me</a>
                 </div>
             </footer>
         </main>
     </div>
 
     <script>
+        const translations = {
+            en: {
+                'nav.about': 'About', 'nav.projects': 'Projects', 'nav.experience': 'Experience', 'nav.education': 'Education', 'nav.skills': 'Skills', 'nav.contact': 'Contact',
+                'hero.greeting': 'Hi there, I\'m', 'hero.title': 'Software Developer & AI Engineer', 'hero.subtitle': 'I build AI-driven Apps with clean architecture, practical design, and seamless user experience.', 'hero.hello': 'Say Hello', 'hero.work': 'See My Work',
+                'about.label': 'About Me', 'about.title': 'Building practical AI products with clarity and purpose.', 'about.text': 'I am a Software Engineer specializing in AI application development, with experience in LLM-based systems, document understanding, and data processing pipelines. I work with Python, Java, and modern web frameworks to design and implement end-to-end solutions.\n\nI focus on applying large language models to real-world problems, such as document parsing, semantic search, and structured output generation. My goal is to bridge engineering and AI to deliver scalable, production-ready systems.',
+                'exp.label': 'Experience', 'exp.title': 'Real-world software delivery and system optimization',
+                'exp.job1.title': 'AI Developer Engineer', 'exp.job1.company': 'Allchip Technologies · Shanghai · 2026.4 - Present', 'exp.job1.b1': 'Designed and implemented a scalable multi-format document parsing framework supporting 10+ file types.', 'exp.job1.b2': 'Implemented Registry Pattern + Factory Pattern for parser auto-registration and dynamic loading.', 'exp.job1.b3': 'Built RAG-based document preprocessing pipeline with structured extraction and semantic chunking.', 'exp.job1.b4': 'Designed unified data output structure integrating body text, tables, and metadata.', 'exp.job1.b5': 'Combined multi-stage processing to improve knowledge base quality and reduce model hallucination risk.', 'exp.job1.b6': 'Implemented comprehensive unit test suite with parameterized tests and exception scenarios.',
+                'exp.job2.title': 'AI Developer Engineer', 'exp.job2.company': 'Shanghai Ideals Information Industry · Shanghai · 2026.2 - 2026.3', 'exp.job2.b1': 'Designed and implemented a scalable multi-format document parsing framework supporting 10+ file types.', 'exp.job2.b2': 'Implemented Registry Pattern + Factory Pattern for parser auto-registration and dynamic loading.', 'exp.job2.b3': 'Built RAG-based document preprocessing pipeline with structured extraction and semantic chunking.', 'exp.job2.b4': 'Designed unified data output structure integrating body text, tables, and metadata.', 'exp.job2.b5': 'Combined multi-stage processing to improve knowledge base quality and reduce model hallucination risk.', 'exp.job2.b6': 'Implemented comprehensive unit test suite with parameterized tests and exception scenarios.',
+                'exp.job3.title': 'Software Development Intern', 'exp.job3.company': 'IntelliPro Group · Santa Clara, USA · 2025.2 - 2025.6', 'exp.job3.b1': 'Developed Python automation system for public opinion data collection with request scheduling.', 'exp.job3.b2': 'Built unstructured text processing pipeline with structured extraction and semantic analysis.', 'exp.job3.b3': 'Developed group Chinese official website using React/Next.js with server-side rendering.', 'exp.job3.b4': 'Participated in Xpeng Motors campus recruitment page frontend development.',
+                'exp.job4.title': 'Software Engineer', 'exp.job4.company': 'Zhongke Digital Shield Technology · Hefei · 2021.10 - 2023.5', 'exp.job4.b1': 'Participated in voice data preprocessing platform development using Python and PyAudio.', 'exp.job4.b2': 'Optimized Mandarin and dialect corpus cleaning with quality assurance rules.', 'exp.job4.b3': 'Participated in real-time speech transcription system development.', 'exp.job4.b4': 'Participated in intelligent data management platform using Java and Spring Boot.', 'exp.job4.b5': 'Optimized MySQL queries reducing average response time from 15s to 2s.',
+                'proj.label': 'Projects', 'proj.title': 'Selected work with polished micro-interactions', 'proj.p1': 'IPG Chinese Official Website', 'proj.p2': 'Stock Price Analysis & Prediction', 'proj.p3': 'AI Document Parsing', 'proj.p4': 'Microblog Platform',
+                'edu.label': 'Education', 'edu.title': 'Growing through thoughtful coursework and applied learning', 'edu.uni1.name': 'Northeastern University', 'edu.uni1.degree': 'Master of Science in Information Systems', 'edu.uni1.date': 'Sept 2023 - Dec 2025', 'edu.uni2.name': 'University of International Relations', 'edu.uni2.degree': 'Bachelor of Engineering in Information Systems', 'edu.uni2.date': 'Sept 2017 - Jun 2021',
+                'skills.label': 'Skills', 'skills.title': 'Tools and languages I enjoy working with', 'skills.cat1': 'Programming Languages', 'skills.cat2': 'Full Stack Development', 'skills.cat3': 'Dev Tools & Engineering',
+                'contact.label': 'Contact', 'contact.title': 'Let\'s build something together', 'contact.email_label': 'Email', 'contact.linkedin_label': 'LinkedIn', 'contact.phone_label': 'Phone',
+                'footer': '© 2026 Mengge Luo. All rights reserved.', 'footer.github': 'GitHub', 'footer.contact': 'Contact Me',
+            },
+            zh: {
+                'nav.about': '关于', 'nav.projects': '项目', 'nav.experience': '经验', 'nav.education': '教育', 'nav.skills': '技能', 'nav.contact': '联系',
+                'hero.greeting': '你好，我是', 'hero.title': '软件开发工程师 & AI工程师', 'hero.subtitle': '我构建具有清晰架构、实用设计和无缝用户体验的 AI 驱动应用。', 'hero.hello': '联系我', 'hero.work': '查看我的作品',
+                'about.label': '关于我', 'about.title': '以清晰目标构建实用的 AI 产品', 'about.text': '我是一名专注于 AI 应用开发的软件工程师，具有 LLM 系统、文档理解和数据处理管道的经验。我使用 Python、Java 和现代 Web 框架来设计和实现端到端解决方案。\n\n我专注于将大语言模型应用于实际问题，如文档解析、语义搜索和结构化输出生成。我的目标是将工程与 AI 相结合，交付可扩展的生产级系统。',
+                'exp.label': '工作经验', 'exp.title': '实际软件交付与系统优化',
+                'exp.job1.title': 'AI 开发工程师', 'exp.job1.company': '全芯智造技术股份有限公司 · 上海 · 2026.4 - 至今', 'exp.job1.b1': '设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。', 'exp.job1.b2': '基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性。', 'exp.job1.b3': '基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块。', 'exp.job1.b4': '设计统一的数据输出结构，整合正文、表格与元数据信息。', 'exp.job1.b5': '结合多阶段处理流程，提升知识库数据质量，降低模型幻觉风险。', 'exp.job1.b6': '编写完善的单元测试体系，保障各类解析器的稳定性与鲁棒性。',
+                'exp.job2.title': 'AI 开发工程师', 'exp.job2.company': '上海理想信息产业（集团）有限公司 · 上海 · 2026.2 - 2026.3', 'exp.job2.b1': '设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。', 'exp.job2.b2': '基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性。', 'exp.job2.b3': '基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块。', 'exp.job2.b4': '设计统一的数据输出结构，整合正文、表格与元数据信息。', 'exp.job2.b5': '结合多阶段处理流程，提升知识库数据质量，降低模型幻觉风险。', 'exp.job2.b6': '编写完善的单元测试体系，保障各类解析器的稳定性与鲁棒性。',
+                'exp.job3.title': '软件开发实习生', 'exp.job3.company': 'IntelliPro Group · 美国圣克拉拉 · 2025.2 - 2025.6', 'exp.job3.b1': '开发 Python 自动化舆情采集系统，设计请求调度与异常重试机制。', 'exp.job3.b2': '构建非结构化文本数据处理流程，进行结构化整理与语义分析。', 'exp.job3.b3': '使用 React/Next.js 开发集团中文官网，通过服务端渲染优化首屏性能。', 'exp.job3.b4': '参与小鹏汽车校招宣传页前端开发，采用 CSS Grid 与 Flexbox 实现响应式布局。',
+                'exp.job4.title': '软件开发工程师', 'exp.job4.company': '中科数盾科技有限公司 · 安徽合肥 · 2021.10 - 2023.5', 'exp.job4.b1': '参与语音数据预处理平台开发，使用 Python 及 PyAudio、LibROSA 实现音频处理。', 'exp.job4.b2': '协助优化普通话与方言语料的清洗与标注流程，提供高质量数据。', 'exp.job4.b3': '参与实时语音转写 Demo 系统开发，协助封装识别接口。', 'exp.job4.b4': '使用 Java 与 Spring Boot 参与智慧数据管控平台开发，实现多个 RESTful API。', 'exp.job4.b5': '参与 MySQL 数据库性能优化，将响应时间从 15 秒优化至 2 秒内。',
+                'proj.label': '项目', 'proj.title': '精心打磨的微交互作品', 'proj.p1': 'IPG 中文官方网站', 'proj.p2': '股票价格分析与预测', 'proj.p3': 'AI 文档解析系统', 'proj.p4': '微博平台',
+                'edu.label': '教育背景', 'edu.title': '通过周思熟虑的课程和应用学习成长', 'edu.uni1.name': '美国东北大学', 'edu.uni1.degree': '信息系统理学硕士', 'edu.uni1.date': '2023年9月 - 2025年12月', 'edu.uni2.name': '国际关系学院', 'edu.uni2.degree': '信息系统工程学士', 'edu.uni2.date': '2017年9月 - 2021年6月',
+                'skills.label': '技能', 'skills.title': '我喜欢使用的工具和语言', 'skills.cat1': '编程语言', 'skills.cat2': '全栈开发', 'skills.cat3': '开发工具与工程实践',
+                'contact.label': '联系', 'contact.title': '让我们一起构建些东西', 'contact.email_label': '邮箱', 'contact.linkedin_label': 'LinkedIn', 'contact.phone_label': '电话',
+                'footer': '© 2026 Mengge Luo. 保留所有权利。', 'footer.github': 'GitHub', 'footer.contact': '联系我',
+            }
+        };
+
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            const langBtn = document.querySelector('.lang-toggle');
+            langBtn.textContent = lang === 'en' ? '中文' : 'EN';
+
+            localStorage.setItem('portfolio-lang', lang);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
+            const langToggle = document.querySelector('.lang-toggle');
+            langToggle.addEventListener('click', function() {
+                currentLang = currentLang === 'en' ? 'zh' : 'en';
+                setLanguage(currentLang);
+            });
+
             const toggleButton = document.querySelector('.menu-toggle');
             const body = document.body;
             const navLinks = document.querySelectorAll('.side-nav a');
@@ -253,6 +310,9 @@ I focus on applying large language models to real-world problems, such as docume
                     }
                 });
             });
+
+            const savedLang = localStorage.getItem('portfolio-lang') || 'en';
+            setLanguage(savedLang);
         });
     </script>
 </body>

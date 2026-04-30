@@ -142,6 +142,36 @@ body::before {
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
 }
 
+.lang-toggle {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    padding: 10px 16px;
+    height: 52px;
+    border-radius: 18px;
+    border: none;
+    background: rgba(255, 127, 156, 0.2);
+    color: #ff7f9c;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 11;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 127, 156, 0.3);
+}
+
+.lang-toggle:hover {
+    background: rgba(255, 127, 156, 0.35);
+    color: #ff7f9c;
+    transform: translateY(-2px);
+    box-shadow: 0 22px 50px rgba(255, 127, 156, 0.25);
+}
+
 .hero {
     position: relative;
     margin-bottom: 34px;
@@ -484,6 +514,10 @@ body.nav-open .main-content {
         display: block;
     }
 
+    .lang-toggle {
+        right: 90px;
+    }
+
     .main-content {
         margin-left: 0;
         padding: 24px 20px 36px;
@@ -538,6 +572,14 @@ body.nav-open .main-content {
     .menu-toggle {
         left: 16px;
         top: 16px;
+    }
+
+    .lang-toggle {
+        right: 16px;
+        top: 16px;
+        padding: 8px 12px;
+        font-size: 12px;
+        width: auto;
     }
 
     .profile-card {
