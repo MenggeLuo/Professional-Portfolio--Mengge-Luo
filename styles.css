@@ -146,6 +146,14 @@ body::before {
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
 }
 
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 12, 34, 0.35);
+    z-index: 5;
+}
+
 .lang-toggle {
     position: static;
     width: 72px;
@@ -525,12 +533,12 @@ body.nav-open .main-content {
         grid-template-columns: 1fr;
     }
 
-    body.nav-open::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background: rgba(8, 12, 34, 0.35);
-        z-index: 5;
+    body.nav-open .nav-overlay {
+        display: block;
+    }
+
+    body.nav-open .menu-toggle {
+        display: none;
     }
 }
 

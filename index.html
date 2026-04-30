@@ -12,6 +12,7 @@
 <body>
     <div class="page-shell">
         <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <div class="nav-overlay"></div>
 
         <nav class="side-nav">
             <div class="nav-brand">
@@ -309,6 +310,23 @@ I focus on applying large language models to real-world problems, such as docume
                         body.classList.remove('nav-open');
                     }
                 });
+            });
+
+            const navOverlay = document.querySelector('.nav-overlay');
+            navOverlay.addEventListener('click', function() {
+                body.classList.remove('nav-open');
+            });
+
+            const sideNav = document.querySelector('.side-nav');
+            let startX;
+            sideNav.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].clientX;
+            });
+            sideNav.addEventListener('touchend', function(e) {
+                const endX = e.changedTouches[0].clientX;
+                if (startX - endX > 50) {
+                    body.classList.remove('nav-open');
+                }
             });
 
             const savedLang = localStorage.getItem('portfolio-lang') || 'en';
