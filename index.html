@@ -36,7 +36,7 @@
                     <img src="girl3.png" alt="Profile Picture" class="profile-pic">
                     <div class="hero-copy">
                         <p class="eyebrow" data-i18n="hero.greeting">Hi there, I'm</p>
-                        <h1>Mengge Luo</h1>
+                        <h1 data-i18n="hero.name">Mengge Luo</h1>
                         <p class="hero-title" data-i18n="hero.title">Software Developer & AI Engineer</p>
                         <p class="hero-subtitle" data-i18n="hero.subtitle">I build AI-driven Apps with clean architecture, practical design, and seamless user experience.</p>
 
@@ -240,7 +240,7 @@ I focus on applying large language models to real-world problems, such as docume
         const translations = {
             en: {
                 'nav.about': 'About', 'nav.projects': 'Projects', 'nav.experience': 'Experience', 'nav.education': 'Education', 'nav.skills': 'Skills', 'nav.contact': 'Contact',
-                'hero.greeting': 'Hi there, I\'m', 'hero.title': 'Software Developer & AI Engineer', 'hero.subtitle': 'I build AI-driven Apps with clean architecture, practical design, and seamless user experience.', 'hero.hello': 'Say Hello', 'hero.work': 'See My Work',
+                'hero.greeting': 'Hi there, I\'m', 'hero.name': 'Mengge Luo', 'hero.title': 'Software Developer & AI Engineer', 'hero.subtitle': 'I build AI-driven Apps with clean architecture, practical design, and seamless user experience.', 'hero.hello': 'Say Hello', 'hero.work': 'See My Work',
                 'about.label': 'About Me', 'about.title': 'Building practical AI products with clarity and purpose.', 'about.text': 'I am a Software Engineer specializing in AI application development, with experience in LLM-based systems, document understanding, and data processing pipelines. I work with Python, Java, and modern web frameworks to design and implement end-to-end solutions.\n\nI focus on applying large language models to real-world problems, such as document parsing, semantic search, and structured output generation. My goal is to bridge engineering and AI to deliver scalable, production-ready systems.',
                 'exp.label': 'Experience', 'exp.title': 'Real-world software delivery and system optimization',
                 'exp.job1.title': 'AI Developer Engineer', 'exp.job1.company': 'Allchip Technologies · Shanghai · 2026.4 - Present', 'exp.job1.b1': 'Designed and implemented a scalable multi-format document parsing framework supporting 10+ file types.', 'exp.job1.b2': 'Implemented Registry Pattern + Factory Pattern for parser auto-registration and dynamic loading.', 'exp.job1.b3': 'Built RAG-based document preprocessing pipeline with structured extraction and semantic chunking.', 'exp.job1.b4': 'Designed unified data output structure integrating body text, tables, and metadata.', 'exp.job1.b5': 'Combined multi-stage processing to improve knowledge base quality and reduce model hallucination risk.', 'exp.job1.b6': 'Implemented comprehensive unit test suite with parameterized tests and exception scenarios.',
@@ -255,7 +255,7 @@ I focus on applying large language models to real-world problems, such as docume
             },
             zh: {
                 'nav.about': '关于', 'nav.projects': '项目', 'nav.experience': '经验', 'nav.education': '教育', 'nav.skills': '技能', 'nav.contact': '联系',
-                'hero.greeting': '你好，我是', 'hero.title': '软件开发工程师 & AI工程师', 'hero.subtitle': '我构建具有清晰架构、实用设计和无缝用户体验的 AI 驱动应用。', 'hero.hello': '联系我', 'hero.work': '查看我的作品',
+                'hero.greeting': '你好，我是', 'hero.name': '骆梦格', 'hero.title': '软件开发工程师 & AI工程师', 'hero.subtitle': '我构建具有清晰架构、实用设计和无缝用户体验的 AI 驱动应用。', 'hero.hello': '联系我', 'hero.work': '查看我的作品',
                 'about.label': '关于我', 'about.title': '以清晰目标构建实用的 AI 产品', 'about.text': '我是一名专注于 AI 应用开发的软件工程师，具有 LLM 系统、文档理解和数据处理管道的经验。我使用 Python、Java 和现代 Web 框架来设计和实现端到端解决方案。\n\n我专注于将大语言模型应用于实际问题，如文档解析、语义搜索和结构化输出生成。我的目标是将工程与 AI 相结合，交付可扩展的生产级系统。',
                 'exp.label': '工作经验', 'exp.title': '实际软件交付与系统优化',
                 'exp.job1.title': 'AI 开发工程师', 'exp.job1.company': '全芯智造技术股份有限公司 · 上海 · 2026.4 - 至今', 'exp.job1.b1': '设计并实现一套可扩展的多格式文档解析框架，支持 PDF、Word、Excel、Markdown、JSON、YAML、HTML 等 10+ 文件类型。', 'exp.job1.b2': '基于 Registry Pattern + Factory Pattern 实现解析器的自动注册与动态加载，显著提升系统扩展性。', 'exp.job1.b3': '基于 RAG 构建文档预处理流水线，对解析内容进行结构化提取与语义分块。', 'exp.job1.b4': '设计统一的数据输出结构，整合正文、表格与元数据信息。', 'exp.job1.b5': '结合多阶段处理流程，提升知识库数据质量，降低模型幻觉风险。', 'exp.job1.b6': '编写完善的单元测试体系，保障各类解析器的稳定性与鲁棒性。',
@@ -264,8 +264,8 @@ I focus on applying large language models to real-world problems, such as docume
                 'exp.job4.title': '软件开发工程师', 'exp.job4.company': '中科数盾科技有限公司 · 安徽合肥 · 2021.10 - 2023.5', 'exp.job4.b1': '参与语音数据预处理平台开发，使用 Python 及 PyAudio、LibROSA 实现音频处理。', 'exp.job4.b2': '协助优化普通话与方言语料的清洗与标注流程，提供高质量数据。', 'exp.job4.b3': '参与实时语音转写 Demo 系统开发，协助封装识别接口。', 'exp.job4.b4': '使用 Java 与 Spring Boot 参与智慧数据管控平台开发，实现多个 RESTful API。', 'exp.job4.b5': '参与 MySQL 数据库性能优化，将响应时间从 15 秒优化至 2 秒内。',
                 'proj.label': '项目', 'proj.title': '精心打磨的微交互作品', 'proj.p1': 'IPG 中文官方网站', 'proj.p2': '股票价格分析与预测', 'proj.p3': 'AI 文档解析系统', 'proj.p4': '微博平台',
                 'edu.label': '教育背景', 'edu.title': '通过周思熟虑的课程和应用学习成长', 'edu.uni1.name': '美国东北大学', 'edu.uni1.degree': '信息系统理学硕士', 'edu.uni1.date': '2023年9月 - 2025年12月', 'edu.uni2.name': '国际关系学院', 'edu.uni2.degree': '信息系统工程学士', 'edu.uni2.date': '2017年9月 - 2021年6月',
-                'skills.label': '技能', 'skills.title': '我喜欢使用的工具和语言', 'skills.cat1': '编程语言', 'skills.cat2': '全栈开发', 'skills.cat3': '开发工具与工程实践',
-                'contact.label': '联系', 'contact.title': '让我们一起构建些东西', 'contact.email_label': '邮箱', 'contact.linkedin_label': 'LinkedIn', 'contact.phone_label': '电话',
+                'skills.label': '技能', 'skills.title': '我使用的工具和语言', 'skills.cat1': '编程语言', 'skills.cat2': '全栈开发', 'skills.cat3': '开发工具与工程实践',
+                'contact.label': '联系', 'contact.title': '我们来一起创造些东西', 'contact.email_label': '邮箱', 'contact.linkedin_label': 'LinkedIn', 'contact.phone_label': '电话',
                 'footer': '© 2026 Mengge Luo. 保留所有权利。', 'footer.github': 'GitHub', 'footer.contact': '联系我',
             }
         };
